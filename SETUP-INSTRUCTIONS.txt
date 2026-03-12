@@ -1,0 +1,105 @@
+# Chess
+
+This project was developed using Angular
+
+## Development server
+
+To start a local development server, run:
+
+```bash
+npm run start
+```
+
+Once the server is running, open your browser and navigate to `http://localhost:4200/`.
+
+-> Check if Node.js is installed
+```bash
+node -v
+```
+If not installed, install with below command:
+```bash
+npm install
+```
+
+-> check Angular version
+```bash
+ng version
+```
+-> If not installed, Install Angular CLI globally
+```bash
+npm install -g @angular/cli
+```
+
+-> create new angular project called "chess"
+```bash 
+ng new chess
+```
+
+-> create following:
+"chess-logic" folder in src/app/chess-logic
+"pieces" folder in src/app/chess-logic/pieces
+src/app/chess-logic/pieces/bishop.ts
+src/app/chess-logic/pieces/king.ts
+src/app/chess-logic/pieces/knight.ts
+src/app/chess-logic/pieces/pawn.ts
+src/app/chess-logic/pieces/piece.ts
+src/app/chess-logic/pieces/queen.ts
+src/app/chess-logic/pieces/rook.ts
+src/app/chess-logic/chess-board.ts
+src/app/chess-logic/models.ts
+
+```bash
+ng g c modules/chess-board --skip-tests
+```
+above command will create following:
+src/app/modules/chess-board/chess-board.component.ts
+src/app/modules/chess-board/chess-board.component.css
+src/app/modules/chess-board/chess-board.component.html
+
+```bash
+ng g c modules/computer-mode --skip-tests
+```
+above command will create following:
+src/app/modules/computer-mode/computer-mode.component.ts 
+src/app/modules/computer-mode/computer-mode.component.css
+src/app/modules/computer-mode/computer-mode.component.html
+
+```bash
+ng g s modules/computer-mode/stockfish --skip-tests
+```
+above command will create following:
+src/app/modules/computer-mode/stockfish.service.ts
+
+-> Create src/app/modules/computer-mode/models.ts
+
+```bash
+ng add @angular/material
+```
+above command will create following:
+src/custom-theme.scss
+
+```bash
+ng g c modules/nav-menu --skip-tests
+```
+above command will create following:
+src/app/modules/nav-menu/nav-menu.component.ts
+src/app/modules/nav-menu/nav-menu.component.css
+src/app/modules/nav-menu/nav-menu.component.html
+
+```bash
+ng g c modules/play-against-computer-dialog --skip-tests
+```
+above command will create following:
+src/app/modules/play-against-computer-dialog/play-against-computer-dialog.component.ts 
+src/app/modules/play-against-computer-dialog/play-against-computer-dialog.component.css 
+src/app/modules/play-against-computer-dialog/play-against-computer-dialog.component.html
+
+```bash
+ng g c modules/move-list --skip-tests
+```
+above command will create following:
+src/app/modules/move-list/move-list.component.ts
+src/app/modules/move-list/move-list.component.css
+src/app/modules/move-list/move-list.component.html
+
+-> create vercel.json ("outputDirectory": "docs", must be same name as "outputPath": "docs", as in angular.json)
