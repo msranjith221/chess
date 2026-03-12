@@ -4,4 +4,6 @@
 
 - Visit [Youtube Channel] for other projects (https://youtube.com/@ranjithsomayaji?si=b185LT7ChHcwzT0G)
 - https://www.youtube.com/@ranjithsomayaji
+- Deployed in Vercel, Live Version (link below):
+- https://chess-eta-ochre.vercel.app/
 
